@@ -1,0 +1,18 @@
+body {
+    background-image: url('/images/photo_2023-02-08_15-30-58.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+.container{
+    padding: 80px 0;
+    border: 5px solid green;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    color: white;
+}

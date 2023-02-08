@@ -12,18 +12,16 @@ function App() {
   const fetchAdvice = () =>{
     axios.get('https://api.adviceslip.com/advice')
         .then((response)=>{
-            let k = response.data.slip.advice;
-            setAdvice(k)
+            setAdvice(response.data.slip.advice)
         })
         .catch((error)=>{
             console.log(error);
         });
   }
   return (
-    <div>
-    <span>
-        {advice}
-    </span>
+    <div className='container'>
+
+    <span><h1>{advice}</h1></span>
     </div>
   )
 }
